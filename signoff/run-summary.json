@@ -1,0 +1,24 @@
+{
+  "runId": "kan-tile-c-openlane-2026-03-29T13-45-09",
+  "generatedAt": "2026-03-29T11:50:47Z",
+  "designName": "graph_kan_v1_mini_lut_fixture_kan_tile_c_top",
+  "runtimeState": "materialized",
+  "openlaneRunTag": "kan_tile_c_v3",
+  "topModuleSource": "generated KAN Tile C bootstrap",
+  "manufacturability": {
+    "drc": "passed",
+    "lvs": "passed",
+    "antenna": "passed"
+  },
+  "artifactRefs": {
+    "metrics": "signoff/metrics.json",
+    "manufacturabilityReport": "signoff/manufacturability.rpt",
+    "gds": "gds/graph_kan_v1_mini_lut_fixture_kan_tile_c_top.gds",
+    "topLevelVerilog": "rtl/graph_kan_v1_mini_lut_fixture_kan_tile_c_top.v",
+    "tileCLutVerilog": "rtl/sovryn_pan_stem_npu_tile_c_kan_lut_eval_v1.v"
+  },
+  "notes": [
+    "The successful run completed after allowing met1 in the routing range and lowering target density.",
+    "Warnings remained around lint, floorplan snapping, IR drop context, and disconnected non-critical pins, but manufacturability gates passed."
+  ]
+}
