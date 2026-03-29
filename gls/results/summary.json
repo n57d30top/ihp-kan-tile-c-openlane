@@ -1,0 +1,39 @@
+{
+  "date": "2026-03-29",
+  "host": "node-alpha",
+  "containerImage": "ghcr.io/efabless/openlane2:2.3.10",
+  "testbench": "gls/gls_tb.v",
+  "library": "gls/sky130_fd_sc_hd_subset_functional.v",
+  "netlist": "design/runs/kan_tile_c_v3/final/nl/graph_kan_v1_mini_lut_fixture_kan_tile_c_top.nl.v",
+  "results": [
+    {
+      "corner": "nom_tt_025C_1v80",
+      "pass": true,
+      "cases": 6,
+      "log": "gls/results/nom_tt_025C_1v80.log",
+      "sdf": "design/runs/kan_tile_c_v3/final/sdf/nom_tt_025C_1v80/graph_kan_v1_mini_lut_fixture_kan_tile_c_top__nom_tt_025C_1v80.sdf",
+      "sdfWarnings": 115
+    },
+    {
+      "corner": "min_tt_025C_1v80",
+      "pass": true,
+      "cases": 6,
+      "log": "gls/results/min_tt_025C_1v80.log",
+      "sdf": "design/runs/kan_tile_c_v3/final/sdf/min_tt_025C_1v80/graph_kan_v1_mini_lut_fixture_kan_tile_c_top__min_tt_025C_1v80.sdf",
+      "sdfWarnings": 115
+    },
+    {
+      "corner": "max_tt_025C_1v80",
+      "pass": true,
+      "cases": 6,
+      "log": "gls/results/max_tt_025C_1v80.log",
+      "sdf": "design/runs/kan_tile_c_v3/final/sdf/max_tt_025C_1v80/graph_kan_v1_mini_lut_fixture_kan_tile_c_top__max_tt_025C_1v80.sdf",
+      "sdfWarnings": 115
+    }
+  ],
+  "notes": [
+    "GLS was executed with Icarus inside the OpenLane container because iverilog was not installed natively on node-alpha.",
+    "The functional subset library is sufficient for this design's directed cases but does not provide full Sky130 specify arc coverage.",
+    "Treat these logs as post-route functional evidence, not as a stronger timing sign-off than OpenSTA/OpenLane metrics."
+  ]
+}
